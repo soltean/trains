@@ -1,0 +1,5 @@
+As a client I want to be able to add a cargo wagons and I want my train to be pulled either way.
+
+Input: LPPRPCPL
+
+Output: <LOCOMOTIVE||PASSENGER||PASSENGER||RESTAURANT||PASSENGER||CARGO||PASSENGER||LOCOMOTIVE>
