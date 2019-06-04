@@ -2,4 +2,7 @@ As a client I want to be able to add a cargo wagons and I want my train to be pu
 
 Input: LPPRPCPL
 
-Output: <LOCOMOTIVE||PASSENGER||PASSENGER||RESTAURANT||PASSENGER||CARGO||PASSENGER||LOCOMOTIVE>
+L=locomotive
+P=passenger
+R=restaurant
+C=cargo

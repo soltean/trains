@@ -2,4 +2,6 @@ As a client I want to be able to add restaurant wagons.
 
 Input: LPPRP
 
-Output: <LOCOMOTIVE||PASSENGER||PASSENGER||PASSENGER||PASSENGER|
+L=locomotive
+P=passenger
+R=restaurant

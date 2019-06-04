@@ -2,4 +2,5 @@ As a client I want to be able to build a passenger train.
 
 Input: LPP
 
-Output: <LOCOMOTIVE||PASSENGER||PASSENGER|
+L=locomotive
+P=passenger
