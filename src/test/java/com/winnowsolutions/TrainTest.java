@@ -1,6 +1,7 @@
 package com.winnowsolutions;
 
-public class TrainTest {
+class TrainTest {
+
 
 
 }
