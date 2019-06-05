@@ -3,12 +3,8 @@ package com.sergiuoltean.tdd;
 public class Locomotive extends Wagon {
 
   public Locomotive() {
-    super("<LOCOMOTIVE|");
+    super("<˳˳_L_˳˳|-", "-|˳˳_L_˳˳>");
     setLocomotive(true);
   }
 
-  @Override
-  String reversed() {
-    return "|LOCOMOTIVE>";
-  }
 }

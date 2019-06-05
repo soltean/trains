@@ -2,22 +2,14 @@ package com.sergiuoltean.tdd;
 
 public class WagonFactory {
 
-  //SOLID
-  //SRP
-  public Wagon build(char in) {
-    if (in == 'L') {
-      return new Locomotive();
+  public Wagon buildWagon(char type) {
+    switch (type) {
+      case 'L': return new Locomotive();
+      case 'P': return new Passenger();
+      case 'R': return new Restaurant();
+      case 'C': return new Cargo();
     }
-    if (in == 'P') {
-      return new Passenger();
-    }
-    if (in == 'R') {
-      return new Restaurant();
-    }
-    if (in == 'C') {
-      return new Cargo();
-    }
-    throw new IllegalArgumentException("Don't know this type of wagon");
+    throw new IllegalArgumentException("Unrecognized wagon type " + type);
   }
 
 }

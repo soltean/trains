@@ -3,11 +3,7 @@ package com.sergiuoltean.tdd;
 public class Restaurant extends Wagon {
 
   public Restaurant() {
-    super("|RESTAURANT|");
+    super("-[˳˳_R_˳˳]-", "-[˳˳_R_˳˳]-");
   }
 
-  @Override
-  String reversed() {
-    return "|RESTAURANT|";
-  }
 }

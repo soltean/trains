@@ -6,37 +6,30 @@ import java.util.stream.Collectors;
 
 public class Train {
 
+  private WagonFactory wagonFactory = new WagonFactory();
   private Deque<Wagon> wagons = new LinkedList<>();
-  private WagonFactory factory = new WagonFactory();
 
-  //OPEN CLOSE
+  //SOLID
+  //OPEN-CLOSE PRINCIPLE
   //FACTORY
   public Train(String input) {
-    var parsed = parse(input);
-    reverseIfLocomotiveLast(parsed);
-  }
-
-  private Deque<Wagon> parse(String input) {
     input.chars().forEach(value -> {
-      var type = (char) value;
-      wagons.add(factory.build(type));
+      var character = (char) value;
+      var wagon = wagonFactory.buildWagon(character);
+      wagons.add(wagon);
     });
-    return wagons;
+    checkIfLastWagonIsLocomotive();
   }
 
-  private void reverseIfLocomotiveLast(Deque<Wagon> wagons) {
+  private void checkIfLastWagonIsLocomotive() {
     var lastWagon = wagons.getLast();
     if (lastWagon.isLocomotive()) {
-      lastWagon.setReversed(true);
+      lastWagon.setReverse(true);
     }
   }
 
   public String print() {
     return wagons.stream().map(Wagon::print).collect(Collectors.joining());
-  }
-
-  public void add(Wagon wagon) {
-    wagons.add(wagon);
   }
 
   public void detachHead() {

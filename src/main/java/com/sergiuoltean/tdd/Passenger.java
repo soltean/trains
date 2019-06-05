@@ -3,11 +3,7 @@ package com.sergiuoltean.tdd;
 public class Passenger extends Wagon {
 
   public Passenger() {
-    super("|PASSENGER|");
+    super("-[˳˳_P_˳˳]-", "-[˳˳_P_˳˳]-");
   }
 
-  @Override
-  String reversed() {
-    return "|PASSENGER|";
-  }
 }
