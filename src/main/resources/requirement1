@@ -2,5 +2,8 @@ As a client I want to be able to build a passenger train.
 
 Input: LPP
 
-L=locomotive
-P=passenger
+L=locomotive  <˳˳_L_˳˳|-
+P=passenger   -[˳˳_P_˳˳]-
+
+
+Output: "<˳˳_L_˳˳|--[˳˳_P_˳˳]--[˳˳_P_˳˳]-"

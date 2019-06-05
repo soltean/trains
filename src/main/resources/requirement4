@@ -1,1 +1,26 @@
 As a client I want to be able to attach/detach the head/tail or the train
+
+L=locomotive  <˳˳_L_˳˳|-
+P=passenger   -[˳˳_P_˳˳]-
+R=restaurant  -[˳˳_R_˳˳]-
+C=cargo       -[˳˳_C_˳˳]-
+
+
+Input: LPPRPCPL
+Output: "<˳˳_L_˳˳|--[˳˳_P_˳˳]--[˳˳_P_˳˳]--[˳˳_R_˳˳]--[˳˳_P_˳˳]--[˳˳_C_˳˳]--[˳˳_P_˳˳]--|˳˳_L_˳˳>"
+
+remove tail
+Output: "<˳˳_L_˳˳|--[˳˳_P_˳˳]--[˳˳_P_˳˳]--[˳˳_R_˳˳]--[˳˳_P_˳˳]--[˳˳_C_˳˳]--[˳˳_P_˳˳]-"
+
+remove tail
+Output: "<˳˳_L_˳˳|--[˳˳_P_˳˳]--[˳˳_P_˳˳]--[˳˳_R_˳˳]--[˳˳_P_˳˳]--[˳˳_C_˳˳]-"
+
+remove head
+Output: "-[˳˳_P_˳˳]--[˳˳_P_˳˳]--[˳˳_R_˳˳]--[˳˳_P_˳˳]--[˳˳_C_˳˳]-"
+
+
+
+
+
+
+

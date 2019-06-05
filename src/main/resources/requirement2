@@ -2,6 +2,9 @@ As a client I want to be able to add restaurant wagons.
 
 Input: LPPRP
 
-L=locomotive
-P=passenger
-R=restaurant
+L=locomotive  <˳˳_L_˳˳|-
+P=passenger   -[˳˳_P_˳˳]-
+R=restaurant  -[˳˳_R_˳˳]-
+
+
+Output: "<˳˳_L_˳˳|--[˳˳_P_˳˳]--[˳˳_P_˳˳]--[˳˳_R_˳˳]--[˳˳_P_˳˳]-"
